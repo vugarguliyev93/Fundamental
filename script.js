@@ -25,8 +25,8 @@ document.querySelector('.check').addEventListener('click', function () {
 
 
   if (!guess) {
-    // document.querySelector('.message').textContent = '⛔️ No number!';
-    displayMessage('⛔️ No number!');
+    // document.querySelector('.message').textContent = ' No number!';
+    displayMessage(' No number!');
 
   } else if (guess === secretNumber) {
     // document.querySelector('.message').textContent = '🎉 Correct Number!';
@@ -49,8 +49,8 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      // document.querySelector('.message').textContent = '💥 You lost the game!';
-      displayMessage('💥 You lost the game!');
+      // document.querySelector('.message').textContent = ' You lost the game!';
+      displayMessage(' You lost the game!');
       document.querySelector('.score').textContent = 0;
     }
   }
